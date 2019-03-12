@@ -1,12 +1,10 @@
 # simple password generator
-
-
 import random
 
 population = "qwertzuiopasdfghjklyxcvbnm1234567890QWERTZUIOPASDFGHJKLYXCVBNM?0=:.,-_@!#$%&/(){}ˇ^*"
 
-password_length = 16
+password_length = input("Please put length of password: ")
 
-your_password = "".join(random.sample(population, password_length))
+your_password = "".join(random.sample(population, int(password_length)))
 
-print(your_password)
+print("Your password is:", your_password)
